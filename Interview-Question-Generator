@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+ <script type="text/javascript">
+
+ 	//using a hashamp, find the smallest number in a 
+
+ 	//Data Structure Array
+ 	var DS = [
+ 	"hash map",
+ 	"binary search tree",
+ 	"queue",
+ 	"stack",
+ 	"heap",
+ 	"linked list",
+ 	"undirected graph",
+ 	"directed graph",
+ 	"2D array",
+ 	"doubly linked list",
+ 	"red black tree",
+ 	"PR quadtree",
+ 	"AVL tree",
+ 	"bag",
+ 	"circular linked list"
+ 	 	]
+
+ 	var desc = [
+ 	"the largest element",
+ 	"the smallest element",
+ 	"the mean of all the elements",
+ 	"the shortest path",
+ 	"a hamiltonian cycle",
+ 	"the minimum spanning tree",
+ 	"the average weight",
+ 	"the longest substring",
+ 	"the 2nd largest element",
+ 	"the nth largest element",
+ 	"the number of levels",
+ 	"the number of nodes",
+ 	"the number of leaves",
+ 	"the number of edges",
+ 	"an in order traversal",
+ 	"a pre-order traversal",
+ 	"a post-order traversal",
+ 	"the largest subtree",
+ 	"the smallest subtree"	
+ 	]
+
+ 	var runtime = [
+ 	"(n)",
+ 	"(log(n))",
+ 	"(ln(n))",
+ 	"(nlog(n))",
+ 	"(n-1)",
+ 	"(n/2)",
+ 	"(n!)",
+ 	"(1)",
+ 	"(4)",
+ 	"(0)",
+ 	"(m)",
+	"(n^n)"
+	]
+
+ 	var lang = [
+ 	"Matlab",
+ 	"Pascal",
+ 	"PHP",
+ 	"CSS",
+ 	"Fortran",
+ 	"Prolog",
+ 	"Java",
+ 	"Assembly",
+ 	"SQL",
+ 	"Ruby",
+ 	"Pyhton",
+ 	"OCaml",
+ 	"Objective C",
+ 	"Swift",
+ 	"Javascript",
+ 	"Lisp",
+ 	"C++"
+ 	]
+
+var runt = ["&#937;", "&#1012", "O"];
+
+
+ 	function random_val(arr){
+ 		return Math.floor(Math.random() * arr.length);
+ 	}
+
+    function generate() {
+        document.getElementById("descript").innerHTML = desc[random_val(desc)];
+        document.getElementById("datastruct").innerHTML = DS[random_val(DS)];
+        document.getElementById("runtime_desc").innerHTML = runtime[random_val(runtime)];
+        document.getElementById("runtime").innerHTML = runt[random_val(runt)];
+        document.getElementById("language").innerHTML = lang[random_val(lang)];
+    }
+
+
+    window.onload = generate; //load
+
+</script>
+
+<h1><center>Computer Science Interview Question Generator</center></h1>
+
+<p style="font-size:45px; text-align: center; margin:0; padding:0; border:0">Find </p>
+
+<p id="descript" style="font-size:65px; text-align: center; margin:0; padding:0; border:0"></p>
+
+<p style="font-size:45px; text-align: center; margin:0; padding:0; border:0"> in a </p>
+
+<p id="datastruct" style="font-size:65px; text-align: center; margin:0; padding:0; border:0"></p>
+
+<p style="font-size:45px; text-align: center; margin:0; padding:0; border:0"> in </p>
+
+<p style="font-size:65px; text-align: center; margin:0; padding:0; border:0"><span id = "runtime">&#920;</span><span id = "runtime_desc"></span></p>
+
+<p style="font-size:45px; text-align: center; margin:0; padding:0; border:0"> <span>[preferably in </span><span><b></span></span><span id = "language"></span><span><span></b></span>]</span></p></body>
+</html>
